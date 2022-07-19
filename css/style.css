@@ -164,3 +164,58 @@ header::before {
     line-height: 39px;
     z-index: 25;
 }
+
+.info {
+    position: relative;
+    background-image: url(../images/info-bg.jpg);
+    background-repeat: no-repeat;
+    block-size: cover;
+    background-position: center;
+}
+
+.info::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 130px;
+    background-color: #262c27;
+    transform: translateY(-120px);
+    z-index: 10;
+}
+
+.info__top {
+    display: flex;
+    gap: 80px;
+    padding-top: 100px;
+}
+
+.info__top-text {
+    position: relative;
+    width: 290px;
+    padding-top: 245px;
+    color: #fff;
+}
+
+.info__top-img {
+    position: relative;
+    z-index: 30;
+}
+
+.popup-btn {
+    border: none;
+    text-align: center;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.popup-btn span {
+    display: block;
+    padding-top: 12px;
+    color: #fff;
+}
+
+.info__btn {
+    
+}
