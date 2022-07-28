@@ -34,6 +34,15 @@ ul {
     margin: 0 auto;
 }
 
+.title {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 67px;
+    text-transform: uppercase;
+
+}
+
 .header {
     position: relative;
     background-image: url(../images/header-bg.jpg);
@@ -220,6 +229,7 @@ header::before {
 }
 
 .popup-btn {
+    position: absolute;
     border: none;
     text-align: center;
     background-color: transparent;
@@ -233,7 +243,6 @@ header::before {
 }
 
 .info__btn {
-    position: absolute;
     right: 0;
     bottom: 0;
 }
@@ -247,10 +256,6 @@ header::before {
 }
 
 .info__specs-title {
-    font-family: 'Comfortaa', cursive;
-    font-size: 60px;
-    line-height: 67px;
-    text-transform: uppercase;
     width: 250px;
 }
 
@@ -273,7 +278,7 @@ header::before {
 }
 
 .buy {
-    padding: 150px 0;
+    padding: 150px 0 0;
 }
 
 .buy__inner {
@@ -288,11 +293,7 @@ header::before {
 }
 
 .buy__title {
-    font-family: 'Comfortaa', cursive;
-    text-transform: uppercase;
     margin-bottom: 50px;
-    font-size: 60px;
-    line-height: 67px;
     color: #0093a1;
 }
 
@@ -351,4 +352,49 @@ header::before {
     color: #000;
     background-color: #b9c400;
     border-color: #b9c400;
+}
+
+.technology {
+    margin-bottom: 150px;
+}
+
+.technology__top {
+    background-image: url(../images/tech-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.technology__top-inner {
+    position: relative;
+    min-height: 110vh;
+}
+
+.technology__btn {
+    top: 50vh;
+    right: 350px;
+}
+
+.technology__top-box {
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+}
+
+.technology__title {
+    max-width: 470px;
+    margin-bottom: 67px;
+}
+
+.technology__list {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.technology__list-item {
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    padding-left: 24px;
 }
