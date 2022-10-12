@@ -144,7 +144,7 @@ header::before {
 .header__text {
     font-size: 24px;
     line-height: 27px;
-    margin-bottom: 20px;
+    
 }
 
 .header__decor-text {
@@ -271,6 +271,7 @@ header::before {
 
 .info__specs {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 130px;
     color: #fff;
@@ -352,6 +353,7 @@ header::before {
     font-size: 35px;
     line-height: 42px;
     background-image: url(../images/star.svg);
+    background-size: cover;
     transition: transform 0.3s;
 }
 
@@ -528,7 +530,7 @@ header::before {
 }
 
 .footer__form {
-    min-width: 500px;
+    max-width: 500px;
 }
 
 .footer__form-input {
@@ -591,4 +593,215 @@ header::before {
 
 .footer__logo:hover path {
     fill: #0093a1;
+}
+
+@media (max-width: 1230px) {
+    .header__decor-text--two {
+        left: 0;
+    }
+
+    .buy__inner {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .buy__img {
+        order: -1;
+        max-width: 100%;
+    }
+
+    .gallery-max {
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    .gallery-max__img {
+        width: 100%;
+        align-self: stretch;
+    }
+
+    .footer__gallery-item {
+        width: 100%;
+        align-self: stretch;
+    }
+}
+
+@media (max-width: 1175px) {
+    .gallery__box {
+        flex-wrap: wrap;
+    }
+
+    .gallery-min {
+        margin-top: 0;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto auto;
+        width: 100%;
+    }
+
+    .gallery__text {
+        width: 100%;
+    }
+
+    .gallery-min__img {
+        width: 100%;
+        align-self: stretch;
+    }
+}
+
+@media (max-width: 1000px) {
+    .info__top {
+        display: block;
+    }
+
+    .info__top-text {
+        width: 100%;
+    }
+
+    .info__top-text--two {
+        padding-top: 45px;
+        padding-bottom: 25px;
+    }
+
+    .info__top-img {
+        display: block;
+        margin: 0 auto;
+        width: 227px;
+    }
+
+    .info__specs {
+        display: block;
+    }
+
+    .footer__top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer__logo {
+        display: inline-block;
+        order: -1;
+        margin: 0 auto 50px;
+    }
+
+    .footer__gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .footer__menu-list {
+        display: block;
+        text-align: center;
+    }
+
+    .footer__menu-item {
+        padding: 15px 0;
+    }
+
+    .footer__social-title {
+        text-align: center;
+    }
+}
+
+@media (max-width: 840px) {
+    .buy__price {
+        top: -220px;
+        bottom: auto;
+    }
+
+    .gallery-min {
+        margin-bottom: 50px;
+    }
+
+    .gallery-max__text {
+        font-size: 18px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 720px) {
+    .header__top {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px 90px;
+    }
+
+    .header__btn {
+        width: 70%;
+    }
+
+    .technology__btn {
+        top: 40vh;
+        right: 50px;
+    }
+}
+
+@media (max-width: 630px) {
+    .info__specs-list {
+        width: 100%;
+    }
+    
+    .info__specs-item {
+        display: block;
+    }
+
+    .title {
+        font-size: 48px;
+        line-height: 46px;
+    }
+
+    .gallery-min {
+        padding: 20px 20px 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .buy__price {
+        width: 170px;
+        height: 168px;
+    }
+}
+
+@media (max-width: 414px) {
+    .header__decor-text {
+        display: none;
+    }
+
+    .header__content {
+        z-index: 35;
+    }
+
+    .technology__title {
+        font-size: 32px;
+        line-height: 36px;
+    }
+    
+    .gallery-min,
+    .gallery-max {
+        gap: 10px;
+    }
+
+    .gallery-min::before {
+        display: none;
+    }
+
+    .footer__title {
+        font-size: 34px;
+        line-height: 38px;
+    }
+
+    .footer__logo svg{
+        width: 90%;
+    }
+}
+
+@media (max-width: 375px) {
+    .header__title {
+        font-size: 55px;
+        line-height: 60px;
+    }
+
+    .header__content-box {
+        margin-right: 0;
+    }
 }
